@@ -123,6 +123,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &35723578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
+  m_PrefabInstance: {fileID: 1418850754}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &35723580
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35723578}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3e33b5f8086ff4a45830819282470424, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &73358042
 GameObject:
   m_ObjectHideFlags: 0
@@ -5689,6 +5714,7 @@ MonoBehaviour:
   - {fileID: 73358046}
   - {fileID: 1832911733}
   bottleAnimator: {fileID: 1673418777}
+  boxAnimator: {fileID: 35723580}
 --- !u!1001 &1418850754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5740,14 +5766,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 3.02
       objectReference: {fileID: 0}
+    - target: {fileID: -8477071279257065025, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b7cd5a8159f7bb438c57d385e3a77a0, type: 2}
+    - target: {fileID: -7158923646189079635, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b7cd5a8159f7bb438c57d385e3a77a0, type: 2}
+    - target: {fileID: -5952855683053608458, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b7cd5a8159f7bb438c57d385e3a77a0, type: 2}
+    - target: {fileID: -2631532823431036793, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b7cd5a8159f7bb438c57d385e3a77a0, type: 2}
+    - target: {fileID: -1866181060066309278, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b7cd5a8159f7bb438c57d385e3a77a0, type: 2}
     - target: {fileID: 919132149155446097, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
       propertyPath: m_Name
       value: gift_box
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 991510863661431722, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b7cd5a8159f7bb438c57d385e3a77a0, type: 2}
+    - target: {fileID: 5459957784365372559, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b7cd5a8159f7bb438c57d385e3a77a0, type: 2}
+    - target: {fileID: 6358951764123894891, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b7cd5a8159f7bb438c57d385e3a77a0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb8482adfd2fe694e838e451e71636d3, type: 3}
 --- !u!1 &1492761020

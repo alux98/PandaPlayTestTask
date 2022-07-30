@@ -9,6 +9,7 @@ public class ButtonAnimationManager : MonoBehaviour
     public Animator surpriseBoxTextAnimator;
     public Animator [] newToppingTextAnimator;
     public Animator bottleAnimator;
+    public Animator boxAnimator;
 
     public void PlayAnimationsOnClick ()
     {
@@ -18,6 +19,7 @@ public class ButtonAnimationManager : MonoBehaviour
     public IEnumerator PlayAnimations ()
     {
         PlayButtonScaleDownAnimation ();
+        PlayBoxAnimation ();
 
         yield return new WaitForSeconds ( 2 );
 
@@ -61,5 +63,10 @@ public class ButtonAnimationManager : MonoBehaviour
     private void PlayBottleAnimation ()
     {
         bottleAnimator.SetBool ( "PlayAnimations", true );
+    }
+
+    private void PlayBoxAnimation ()
+    {
+        boxAnimator.SetBool ( "OpenBox", true );
     }
 }
