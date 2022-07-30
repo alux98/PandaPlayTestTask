@@ -8,6 +8,7 @@ public class ButtonAnimationManager : MonoBehaviour
     public Animator lightRaysAnimator;
     public Animator surpriseBoxTextAnimator;
     public Animator [] newToppingTextAnimator;
+    public Animator bottleAnimator;
 
     public void PlayAnimationsOnClick ()
     {
@@ -21,6 +22,7 @@ public class ButtonAnimationManager : MonoBehaviour
         yield return new WaitForSeconds ( 2 );
 
         PlayLightRaysAnimation ();
+        PlayBottleAnimation ();
 
         yield return new WaitForSeconds ( 1 );
 
@@ -54,5 +56,10 @@ public class ButtonAnimationManager : MonoBehaviour
         surpriseBoxTextAnimator.SetBool ( "ScaleTextDown", true );
         newToppingTextAnimator [ 0 ].SetBool ( "ScaleTextUp", true );
         newToppingTextAnimator [ 1 ].SetBool ( "ScaleTextUp", true );
+    }
+
+    private void PlayBottleAnimation ()
+    {
+        bottleAnimator.SetBool ( "PlayAnimations", true );
     }
 }
