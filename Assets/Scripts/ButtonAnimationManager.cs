@@ -11,6 +11,8 @@ public class ButtonAnimationManager : MonoBehaviour
     public Animator bottleAnimator;
     public Animator boxAnimator;
 
+    private float boxAnimationEndTime;
+
     public void PlayAnimationsOnClick ()
     {
         StartCoroutine ( PlayAnimations () );
@@ -18,19 +20,20 @@ public class ButtonAnimationManager : MonoBehaviour
 
     public IEnumerator PlayAnimations ()
     {
+
         PlayButtonScaleDownAnimation ();
         PlayBoxAnimation ();
 
-        yield return new WaitForSeconds ( 2 );
+        yield return new WaitForSeconds ( 0.8f );
 
         PlayLightRaysAnimation ();
         PlayBottleAnimation ();
 
-        yield return new WaitForSeconds ( 1 );
+        yield return new WaitForSeconds ( 1.0f );
 
         PlayTextAnimations ();
 
-        yield return new WaitForSeconds ( 2 );
+        yield return new WaitForSeconds ( 2.0f );
 
         PlayButtonScaleUpAnimation ();
     }

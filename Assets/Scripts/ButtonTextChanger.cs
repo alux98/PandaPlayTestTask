@@ -15,13 +15,6 @@ public class ButtonTextChanger : MonoBehaviour
 
     public void ChangeText ()
     {
-        if ( buttonText.text == "OPEN" )
-        {
-            buttonText.text = "GET";
-        }
-        else if ( buttonText.text == "GET" )
-        {
-            buttonText.text = "OPEN";
-        }
+        buttonText.text = "GET";
     }
 }
