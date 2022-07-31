@@ -11,16 +11,19 @@ public class ButtonTextChanger : MonoBehaviour
 
     public void ChangeTextWithDelay ()
     {
-        Invoke ( "ChangeText", 2 );
+        StartCoroutine ( ChangeText () );
     }
 
-    public void ChangeText ()
+    public IEnumerator ChangeText ()
     {
-        buttonText.text = "GET";
-
-        /*if ( buttonText.text == "GET" )
+        if ( buttonText.text == "GET" )
         {
             SceneManager.LoadScene ( "MainScene" );
-        }*/
+        }
+        else
+        {
+            yield return new WaitForSeconds ( 2.0f );
+            buttonText.text = "GET";
+        }
     }
 }
