@@ -24,12 +24,12 @@ public class ButtonAnimationManager : MonoBehaviour
         PlayButtonScaleDownAnimation ();
         PlayBoxAnimation ();
 
-        yield return new WaitForSeconds ( 0.8f );
+        yield return new WaitForSeconds ( 2.0f );
 
         PlayLightRaysAnimation ();
         PlayBottleAnimation ();
 
-        yield return new WaitForSeconds ( 1.0f );
+        yield return new WaitForSeconds ( 0.8f );
 
         PlayTextAnimations ();
 
