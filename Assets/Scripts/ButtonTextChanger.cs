@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ButtonTextChanger : MonoBehaviour
 {
@@ -16,5 +17,10 @@ public class ButtonTextChanger : MonoBehaviour
     public void ChangeText ()
     {
         buttonText.text = "GET";
+
+        /*if ( buttonText.text == "GET" )
+        {
+            SceneManager.LoadScene ( "MainScene" );
+        }*/
     }
 }
