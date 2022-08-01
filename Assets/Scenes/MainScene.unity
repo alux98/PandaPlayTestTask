@@ -5337,8 +5337,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 1, g: 0.9253952, b: 0.82452834, a: 1}
+  m_Intensity: 2.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5395,11 +5395,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 1.54, y: 6.92, z: 1.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &705507996
 MonoBehaviour:
@@ -6145,7 +6145,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 230697771306189158, guid: 629e1be82afab3246b54d068c9b977ed, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 230697771306189158, guid: 629e1be82afab3246b54d068c9b977ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6278,7 +6278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7195211006105371228, guid: 0c358d3664479f640838e472b680bbe0, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7195211006105371228, guid: 0c358d3664479f640838e472b680bbe0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6307,6 +6307,10 @@ PrefabInstance:
     - target: {fileID: 7534899194664065254, guid: 0c358d3664479f640838e472b680bbe0, type: 3}
       propertyPath: m_Name
       value: PepperBottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534899194664065254, guid: 0c358d3664479f640838e472b680bbe0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c358d3664479f640838e472b680bbe0, type: 3}

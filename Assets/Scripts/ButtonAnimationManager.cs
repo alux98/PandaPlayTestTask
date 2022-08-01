@@ -20,11 +20,13 @@ public class ButtonAnimationManager : MonoBehaviour
 
     public IEnumerator PlayAnimations ()
     {
-
         PlayButtonScaleDownAnimation ();
         PlayBoxAnimation ();
-
-        yield return new WaitForSeconds ( 1.75f );
+        
+        yield return new WaitForSeconds ( boxAnimator.GetCurrentAnimatorClipInfo ( 0 ).Length );
+        
+        yield return new WaitForSeconds ( boxAnimator.GetCurrentAnimatorClipInfo ( 0 ).Length * 0.5f );
+        
 
         PlayLightRaysAnimation ();
         PlayBottleAnimation ();
@@ -53,7 +55,6 @@ public class ButtonAnimationManager : MonoBehaviour
     private void PlayLightRaysAnimation ()
     {
         lightRaysAnimator.SetBool ( "StartRotate", true );
-        lightRaysAnimator.SetBool ( "StopRotatin", false );
     }
 
     private void PlayTextAnimations ()
