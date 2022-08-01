@@ -1,2 +1,2 @@
 # PandaPlayTestTask
-To reload scene press "GET" button
+To reload scene press "GET" button.
