@@ -1,2 +1,2 @@
 # PandaPlayTestTask
-PandaPlay animation test task
+To reload scene press "GET" button
